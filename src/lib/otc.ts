@@ -1,4 +1,4 @@
-// Central content store for OTC — every fact comes from content-brief.md.
+// Central content store for OTC, every fact comes from content-brief.md.
 // Do not edit facts here without updating the brief first.
 
 export const SITE = {
@@ -63,8 +63,8 @@ export const SHORT_COURSES = [
   { name: "Millwright", note: "Installs, dismantles, repairs, re-assembles and moves industrial machinery", price: "N$3,000" },
 ] as const;
 
-export const INTAKE_FULL_TIME = "2 intakes per year — full-time and part-time";
-export const INTAKE_SHORT = "4 intakes per year — full-time and part-time";
+export const INTAKE_FULL_TIME = "2 intakes per year, full-time and part-time";
+export const INTAKE_SHORT = "4 intakes per year, full-time and part-time";
 
 export const INSTITUTIONAL_UNITS = [
   {
@@ -131,7 +131,7 @@ export const VALUES = [
   {
     key: "entrepreneurship",
     name: "Entrepreneurship",
-    blurb: "Trainees leave with the tools to start and run a small business — not just to seek employment.",
+    blurb: "Trainees leave with the tools to start and run a small business, not just to seek employment.",
   },
   {
     key: "community",
@@ -141,7 +141,7 @@ export const VALUES = [
   {
     key: "inclusive",
     name: "Inclusiveness",
-    blurb: "Open to every able-bodied Namibian from all walks of life — no background is a barrier to entry.",
+    blurb: "Open to every able-bodied Namibian from all walks of life, no background is a barrier to entry.",
   },
 ] as const;
 
@@ -154,7 +154,7 @@ export const APPLICATION_STEPS = [
   {
     step: "02",
     title: "Confirm entry requirements",
-    blurb: "Full-time NVC programs typically require a Grade 10 or Grade 12 certificate (subject to the program). Short courses have program-specific minimums — ask Admissions for the current sheet.",
+    blurb: "Full-time NVC programs typically require a Grade 10 or Grade 12 certificate (subject to the program). Short courses have program-specific minimums, ask Admissions for the current sheet.",
   },
   {
     step: "03",

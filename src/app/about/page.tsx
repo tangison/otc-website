@@ -27,7 +27,7 @@ export default function AboutPage() {
             <Reveal delay={0.12}>
               <p className="lead text-navy/80">
                 Founded in October 2019 by a young Namibian entrepreneur, OTC has grown into a seven-trade
-                TVET institution serving the Ohangwena region and beyond — aligned to Harambee Prosperity
+                TVET institution serving the Ohangwena region and beyond, aligned to Harambee Prosperity
                 Plan I & II, Vision 2030, and the UN Sustainable Development Goals.
               </p>
             </Reveal>
@@ -114,7 +114,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values grid */}
-      <section className="py-20 sm:py-28 bg-navy text-white">
+      <section className="py-20 sm:py-28 navy-texture text-white">
         <div className="mx-auto max-w-6xl px-4">
           <div className="flex flex-wrap items-end justify-between gap-6 mb-14">
             <div className="max-w-xl">

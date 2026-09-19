@@ -197,7 +197,7 @@ export default function ContactPage() {
                       rows={5}
                       required
                       className="rounded-xl border border-navy/15 bg-white px-4 py-3 text-[15px] text-navy placeholder:text-navy/40 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/40 transition resize-y"
-                      placeholder="Tell us what you'd like to know — intake dates, fees, course details, partnerships..."
+                      placeholder="Tell us what you'd like to know, intake dates, fees, course details, partnerships..."
                     />
                   </label>
                   <div className="flex flex-wrap items-center justify-between gap-3">

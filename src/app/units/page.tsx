@@ -39,7 +39,7 @@ export default function UnitsPage() {
         </div>
       </section>
 
-      {/* Unit detail — Z-axis cascade with alternating asymmetric splits */}
+      {/* Unit detail, Z-axis cascade with alternating asymmetric splits */}
       <section className="py-12 sm:py-16 space-y-16 sm:space-y-24">
         {INSTITUTIONAL_UNITS.map((u, i) => {
           const a = accentClasses[u.accent];
@@ -48,7 +48,7 @@ export default function UnitsPage() {
             <div key={u.key} id={u.key} className="section-anchor mx-auto max-w-6xl px-4">
               <Reveal>
                 <div className={`grid gap-8 md:grid-cols-2 md:items-center ${reversed ? "md:[&>*:first-child]:order-2" : ""}`}>
-                  {/* Visual block — Z-axis layered */}
+                  {/* Visual block, Z-axis layered */}
                   <div className="relative h-[320px] sm:h-[420px] md:h-[460px]">
                     {/* Background card */}
                     <div
@@ -128,7 +128,7 @@ export default function UnitsPage() {
       </section>
 
       {/* Footer CTA */}
-      <section className="bg-navy text-white py-16 sm:py-20 mt-12">
+      <section className="navy-texture text-white py-16 sm:py-20 mt-12">
         <div className="mx-auto max-w-6xl px-4 flex flex-wrap items-center justify-between gap-6">
           <Reveal>
             <p className="font-display text-2xl font-700 max-w-xl">

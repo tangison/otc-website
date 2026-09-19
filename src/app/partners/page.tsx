@@ -32,7 +32,7 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* Partner cards — editorial 3-card grid with country tag */}
+      {/* Partner cards, editorial 3-card grid with country tag */}
       <section className="py-12 sm:py-16">
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid gap-6 md:grid-cols-3">
@@ -40,7 +40,7 @@ export default function PartnersPage() {
               <Reveal key={p.key} delay={i * 0.08}>
                 <article className="group h-full rounded-3xl border border-navy/10 bg-white p-7 sm:p-8 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-[0_30px_60px_-30px_rgba(1,0,127,0.45)]">
                   <div className="flex items-start justify-between gap-4 mb-6">
-                    {/* Logo placeholder block — monogram for each partner */}
+                    {/* Logo placeholder block, monogram for each partner */}
                     <div className="grid h-16 w-16 place-items-center rounded-2xl bg-navy text-gold font-display text-2xl font-700 ring-1 ring-gold/30">
                       {p.name.split(" ").map((w) => w[0]).slice(0, 2).join("")}
                     </div>

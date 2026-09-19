@@ -1,4 +1,4 @@
-# Ongenga Technical College — Website
+# Ongenga Technical College, Website
 
 Production website for Ongenga Technical College (OTC), a Namibian TVET institution in Ohangwena Region.
 
@@ -10,14 +10,14 @@ Production website for Ongenga Technical College (OTC), a Namibian TVET institut
 - Deployed on Vercel
 
 ## Pages
-- `/` — Home: hero, quick facts, two pathways, horticulture feature, institutional units preview, apply CTA
-- `/about` — Vision, mission, founding story, parent company, four values, alignment strip
-- `/programs` — Full-time NVC (7 trades) + short courses (9) with fees shown only where confirmed
-- `/units` — EDC, OTC Boxing Club, Auxiliary Centre, Sem Hasheela Agricultural Campus (Z-axis cascade)
-- `/partners` — Bulawayo Polytechnic, Advanced Design Colleges, CJC Agricultural College
-- `/apply` — Intake schedule, 4-step process, form placeholder, Admissions contact
-- `/contact` — Phone, email, address, OpenStreetMap embed, enquiry form (mailto)
-- `/privacy` — Plain-language privacy policy
+- `/`, Home: hero, quick facts, two pathways, horticulture feature, institutional units preview, apply CTA
+- `/about`, Vision, mission, founding story, parent company, four values, alignment strip
+- `/programs`, Full-time NVC (7 trades) + short courses (9) with fees shown only where confirmed
+- `/units`, EDC, OTC Boxing Club, Auxiliary Centre, Sem Hasheela Agricultural Campus (Z-axis cascade)
+- `/partners`, Bulawayo Polytechnic, Advanced Design Colleges, CJC Agricultural College
+- `/apply`, Intake schedule, 4-step process, form placeholder, Admissions contact
+- `/contact`, Phone, email, address, OpenStreetMap embed, enquiry form (mailto)
+- `/privacy`, Plain-language privacy policy
 - `404` and error boundaries
 
 ## Brand

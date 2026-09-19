@@ -5,7 +5,7 @@ import { NAV, SITE } from "@/lib/otc";
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="mt-auto bg-navy text-white">
+    <footer className="mt-auto navy-texture text-white">
       {/* gold hairline top */}
       <div className="h-px w-full bg-gold/40" />
       <div className="mx-auto max-w-6xl px-4 py-16 sm:py-20">

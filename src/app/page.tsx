@@ -12,7 +12,7 @@ import {
 import { ArrowUpRight, MapPin, Phone, Mail, CalendarDays } from "lucide-react";
 
 export const metadata = {
-  title: "Ongenga Technical College — Nurturing the Masters of Value Addition",
+  title: "Ongenga Technical College, Nurturing the Masters of Value Addition",
   description:
     "A Namibian TVET institution in Ohangwena Region. National Vocational Certificate programs across seven trades, plus short courses from ICDL to millwright. Founded October 2019.",
   alternates: { canonical: "/" },
@@ -69,7 +69,7 @@ export default function HomePage() {
                 <p className="lead mt-8 max-w-xl">
                   Ongenga Technical College (OTC) is a privately-owned Namibian TVET institution,
                   trading under Ethics Group Holdings (Pty) Ltd. We train every able-bodied Namibian
-                  across seven full-time trades and a growing portfolio of short courses — aligned to
+                  across seven full-time trades and a growing portfolio of short courses, aligned to
                   Namibia's National Development Plans, Harambee Prosperity Plan I & II, and Vision 2030.
                 </p>
               </Reveal>
@@ -129,7 +129,7 @@ export default function HomePage() {
       </section>
 
       {/* ============== MARQUEE STRIP ============== */}
-      <section aria-hidden className="bg-navy text-white py-4 overflow-hidden">
+      <section aria-hidden className="navy-texture text-white py-4 overflow-hidden">
         <div className="marquee">
           <div className="marquee-track">
             {[0, 1].map((dup) => (
@@ -282,13 +282,13 @@ export default function HomePage() {
               </Reveal>
               <Reveal delay={0.05}>
                 <h2 className="display-3 text-navy mt-5">
-                  Soil, propagation, and crop care — grounded in Namibian conditions.
+                  Soil, propagation, and crop care, grounded in Namibian conditions.
                 </h2>
               </Reveal>
               <Reveal delay={0.1}>
                 <p className="mt-5 text-[16px] text-navy/75 leading-relaxed">
                   Horticulture runs both as a full-time NVC trade and as part of the work at
-                  Sem Hasheela Agricultural Campus — where apiculture, mushroom production,
+                  Sem Hasheela Agricultural Campus, where apiculture, mushroom production,
                   and food processing sit alongside the college's main horticulture program.
                 </p>
               </Reveal>
@@ -336,7 +336,7 @@ export default function HomePage() {
       </section>
 
       {/* ============== APPLY CTA ============== */}
-      <section aria-label="Apply to OTC" className="bg-navy text-white py-20 sm:py-28">
+      <section aria-label="Apply to OTC" className="navy-texture text-white py-20 sm:py-28">
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid gap-12 md:grid-cols-[1.2fr_0.8fr] md:items-end">
             <div>

@@ -90,10 +90,10 @@ export function SiteHeader() {
           <div className="flex items-center gap-2">
             <Link
               href="/apply"
-              className="hidden md:inline-flex items-center gap-2 rounded-full bg-navy px-4 py-2.5 text-[13.5px] font-600 text-white transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-navy-700 active:scale-[0.98]"
+              className="hidden md:inline-flex items-center gap-2 rounded-full bg-gold px-4 py-2.5 text-[13.5px] font-700 text-navy transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-gold-soft active:scale-[0.98]"
             >
               Apply
-              <span className="grid h-5 w-5 place-items-center rounded-full bg-gold text-navy">
+              <span className="grid h-5 w-5 place-items-center rounded-full bg-navy text-gold">
                 <span aria-hidden className="block text-[10px] leading-none -translate-y-[1px]">↗</span>
               </span>
             </Link>

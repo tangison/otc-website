@@ -30,7 +30,7 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://otc.nam.na"),
   title: {
-    default: "Ongenga Technical College — Nurturing the Masters of Value Addition",
+    default: "Ongenga Technical College, Nurturing the Masters of Value Addition",
     template: "%s · Ongenga Technical College",
   },
   description:
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.webmanifest",
   openGraph: {
-    title: "Ongenga Technical College — Nurturing the Masters of Value Addition",
+    title: "Ongenga Technical College, Nurturing the Masters of Value Addition",
     description:
       "A Namibian TVET institution in Ohangwena Region. National Vocational Certificate programs and short courses across seven trades. Founded October 2019.",
     url: "https://otc.nam.na",
@@ -105,7 +105,7 @@ const jsonLd = {
   telephone: "+264 85 8030415",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Ongenga Industrial Park, Omafo — Ongenga main road",
+    streetAddress: "Ongenga Industrial Park, Omafo, Ongenga main road",
     addressRegion: "Ohangwena Region",
     addressCountry: "NA",
   },

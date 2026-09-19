@@ -132,7 +132,7 @@ export default function ProgramsPage() {
             </Reveal>
           </div>
 
-          {/* Short courses table — navy CTA strip, asymmetric rows */}
+          {/* Short courses table, navy CTA strip, asymmetric rows */}
           <div className="rounded-3xl border border-navy/10 overflow-hidden bg-white">
             <div className="hidden sm:grid grid-cols-[1fr_2fr_auto] gap-6 bg-navy text-white px-7 py-4 text-[12px] font-600 uppercase tracking-[0.16em]">
               <span>Course</span>
@@ -175,7 +175,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-navy text-white py-20 sm:py-24">
+      <section className="navy-texture text-white py-20 sm:py-24">
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid gap-8 md:grid-cols-[1.4fr_0.6fr] md:items-center">
             <Reveal>

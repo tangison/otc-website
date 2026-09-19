@@ -344,6 +344,28 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: inherit;
 }
 
+/* Subtle dotted texture on navy sections — adds depth without flattening to solid color */
+.navy-texture {
+  position: relative;
+  background-color: #01007F;
+  background-image:
+    radial-gradient(rgba(217,170,28,0.06) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 28px 28px, 7px 7px;
+  background-position: 0 0, 14px 14px;
+}
+
+/* Gold rule line that sits above a section heading — editorial rhythm */
+.section-rule::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 2px;
+  background: #D9AA1C;
+  margin-bottom: 1.25rem;
+  border-radius: 1px;
+}
+
 /* Section anchor offset for sticky-nav jumps */
 .section-anchor {
   scroll-margin-top: 100px;

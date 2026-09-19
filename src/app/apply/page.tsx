@@ -8,7 +8,7 @@ import { Mail, Phone, MapPin, FileText, Info } from "lucide-react";
 export const metadata: Metadata = {
   title: "Admissions",
   description:
-    "How to apply to Ongenga Technical College — intake schedule, entry requirements, and how to submit your application. Two intakes per year for full-time, four intakes per year for short courses.",
+    "How to apply to Ongenga Technical College, intake schedule, entry requirements, and how to submit your application. Two intakes per year for full-time, four intakes per year for short courses.",
   alternates: { canonical: "/apply" },
 };
 
@@ -35,7 +35,7 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      {/* Intake schedule — two cards */}
+      {/* Intake schedule, two cards */}
       <section className="py-12 sm:py-16">
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid gap-6 md:grid-cols-2">
@@ -114,7 +114,7 @@ export default function ApplyPage() {
                   </p>
                   <div className="mt-auto pt-6 flex flex-wrap gap-2">
                     <a
-                      href={`mailto:${SITE.email}?subject=Application form request — Ongenga Technical College`}
+                      href={`mailto:${SITE.email}?subject=Application form request, Ongenga Technical College`}
                       className="inline-flex items-center gap-2 rounded-full bg-navy px-4 py-2.5 text-[13px] font-600 text-white hover:bg-navy-700 transition-colors"
                     >
                       <Mail size={13} strokeWidth={1.6} />
@@ -221,7 +221,7 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section className="bg-navy text-white py-16 sm:py-20">
+      <section className="navy-texture text-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 flex flex-wrap items-center justify-between gap-6">
           <Reveal>
             <p className="font-display text-2xl font-700 max-w-xl">
