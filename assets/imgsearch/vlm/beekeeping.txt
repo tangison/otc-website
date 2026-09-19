@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Watermark: No\nSubject: Beekeeper in protective suit inspecting a honeycomb frame.\nQuality: Good",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789800918,
+  "id": "2026091914551368663cc88d32466c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026091914551368663cc88d32466c",
+  "usage": {
+    "completion_tokens": 23,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5712,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5735
+  }
+}

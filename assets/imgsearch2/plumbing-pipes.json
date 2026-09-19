@@ -1,0 +1,47 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "steel pipes industrial warehouse metal tubes"
+✅ Got 5 images
+{
+  "success": true,
+  "query": "steel pipes industrial warehouse metal tubes",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/45923a60c4d4.jpg",
+      "caption": "",
+      "source": "Dreamstime.com",
+      "original_width": "1600px",
+      "original_height": "1004px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b6f83df38be1.jpeg",
+      "caption": "",
+      "source": "TJYCT Steel Co., Ltd",
+      "original_width": "1920px",
+      "original_height": "1100px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a498ce2909bb.jpg",
+      "caption": "",
+      "source": "Heavy Duty 1\" x 2\" Steel Tube | Framing System",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5f20b7232fbd.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "867px",
+      "original_height": "1390px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/86c384c43051.jpg",
+      "caption": "",
+      "source": "Moksh Tubes LLP",
+      "original_width": "1600px",
+      "original_height": "916px"
+    }
+  ]
+}

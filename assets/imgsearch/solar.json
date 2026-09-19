@@ -1,0 +1,40 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "solar panel installation technicians Africa"
+✅ Got 4 images
+{
+  "success": true,
+  "query": "solar panel installation technicians Africa",
+  "count": 4,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/1d092624013f.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "781px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/57d4493ef733.jpg",
+      "caption": "",
+      "source": "Startup Graveyard Africa",
+      "original_width": "2560px",
+      "original_height": "1920px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/bbf58d312f3e.jpg",
+      "caption": "",
+      "source": "energy.economictimes.indiatimes.com",
+      "original_width": "1254px",
+      "original_height": "836px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3ac4877edc0d.png",
+      "caption": "",
+      "source": "Victron Energy",
+      "original_width": "2344px",
+      "original_height": "1760px"
+    }
+  ]
+}

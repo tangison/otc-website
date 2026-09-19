@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Watermark no\nWoman sewing with a vintage Singer machine\nQuality good",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789801385,
+  "id": "20260919150241cf837806b67d4e54",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260919150241cf837806b67d4e54",
+  "usage": {
+    "completion_tokens": 15,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 6197,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 6212
+  }
+}

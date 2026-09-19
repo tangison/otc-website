@@ -1,0 +1,40 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "oyster mushroom farming growing shelves"
+✅ Got 4 images
+{
+  "success": true,
+  "query": "oyster mushroom farming growing shelves",
+  "count": 4,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f57277c24d32.jpg",
+      "caption": "",
+      "source": "Oak and Spore",
+      "original_width": "3984px",
+      "original_height": "2240px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a2b0e1e246f4.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "956px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e382db4594c0.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "866px",
+      "original_height": "1390px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/152f1d569564.jpg",
+      "caption": "",
+      "source": "Field & Forest Products",
+      "original_width": "1280px",
+      "original_height": "1280px"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Watermark: No\nSubject: Man inspecting mushroom cultivation in a lab\nQuality: Good",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789800960,
+  "id": "20260919145555fc75a64b50b547e1",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260919145555fc75a64b50b547e1",
+  "usage": {
+    "completion_tokens": 20,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5904,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5924
+  }
+}

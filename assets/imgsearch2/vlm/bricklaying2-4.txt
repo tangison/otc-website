@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Yes\nConstruction worker laying concrete blocks\nBad",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789801859,
+  "id": "2026091915105763ea1afe939e4f12",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026091915105763ea1afe939e4f12",
+  "usage": {
+    "completion_tokens": 10,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2125,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2135
+  }
+}

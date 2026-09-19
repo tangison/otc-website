@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "LINE1: No watermark, but large \"WORKSHOPS\" text overlay.\nLINE2: Diverse students in collaborative classroom and workshop settings.\nLINE3: Good quality, professional and well-lit.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789801412,
+  "id": "20260919150330adeb2ecff2194647",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260919150330adeb2ecff2194647",
+  "usage": {
+    "completion_tokens": 42,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1093,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1135
+  }
+}

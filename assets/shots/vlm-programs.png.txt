@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "6/10\nIt leans image-led but feels more functional than premium; the typography lacks the refined, bespoke quality of a Stanford or Collins standard.\nThe heavy-handed blue gradient overlay on the hero image is muddy and obscures the detail of the photography.\nThe headline is strong, evocative, and perfectly suited for a technical college's mission.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789804148,
+  "id": "20260919154904a758a95f24ee45c1",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260919154904a758a95f24ee45c1",
+  "usage": {
+    "completion_tokens": 71,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1738,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1809
+  }
+}

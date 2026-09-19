@@ -1,0 +1,47 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "African woman market stall selling goods entrepreneur"
+✅ Got 5 images
+{
+  "success": true,
+  "query": "African woman market stall selling goods entrepreneur",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5fc94f810da0.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "956px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3b6547134f08.webp",
+      "caption": "",
+      "source": "mohac africa",
+      "original_width": "1536px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b284d55925d0.jpg",
+      "caption": "",
+      "source": "BBC",
+      "original_width": "1611px",
+      "original_height": "906px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7a781ba90b26.jpg",
+      "caption": "",
+      "source": "The Guardian",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/92a7cbf3de44.jpg",
+      "caption": "",
+      "source": "Shopify",
+      "original_width": "1600px",
+      "original_height": "900px"
+    }
+  ]
+}

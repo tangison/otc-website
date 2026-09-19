@@ -1,0 +1,47 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "close up welding arc bright sparks steel"
+✅ Got 5 images
+{
+  "success": true,
+  "query": "close up welding arc bright sparks steel",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f8e2f33da73c.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "951px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/92f8db6b1820.jpg",
+      "caption": "",
+      "source": "Vern Lewis Welding Supply",
+      "original_width": "1536px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7889492d1cfe.jpg",
+      "caption": "",
+      "source": "DepositPhotos",
+      "original_width": "1024px",
+      "original_height": "768px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/665ca055ab41.jpeg",
+      "caption": "",
+      "source": "Pexels",
+      "original_width": "4512px",
+      "original_height": "3055px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/14e7de205ceb.jpg",
+      "caption": "",
+      "source": "Vern Lewis Welding Supply",
+      "original_width": "1500px",
+      "original_height": "857px"
+    }
+  ]
+}

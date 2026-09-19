@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "LINE1: Yes, stock site watermark (123RF).\nLINE2: Construction worker building a brick wall.\nLINE3: Good.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789801137,
+  "id": "202609191458480764687699d641c1",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609191458480764687699d641c1",
+  "usage": {
+    "completion_tokens": 28,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1589,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1617
+  }
+}

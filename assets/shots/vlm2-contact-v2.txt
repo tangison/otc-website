@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "6/10\nYes, the hero photography is prominent and well-treated with a clean gradient overlay that preserves the image's integrity.\nThe content layout is severely unbalanced, leaving a massive amount of empty white space on the right side of the main contact section.\nImplement a two-column grid for the contact details and location image to utilize the available width and create a more cohesive visual block.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789804319,
+  "id": "20260919155154fd90f655b7ad4104",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260919155154fd90f655b7ad4104",
+  "usage": {
+    "completion_tokens": 78,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 4428,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4506
+  }
+}

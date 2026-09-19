@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "4/10\nText-heavy and generic; lacks the visual impact or editorial polish of a premium, image-led brand.\nThe background image is far too dark and muddy, making the \"image-led\" attempt fail and resulting in a flat, low-contrast layout.\nThe witty 404 copy (\"not on the shelf\") is a smart, on-brand touch that adds much-needed personality.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789804209,
+  "id": "20260919155006054bd1eebcb6428c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260919155006054bd1eebcb6428c",
+  "usage": {
+    "completion_tokens": 79,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1738,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1817
+  }
+}

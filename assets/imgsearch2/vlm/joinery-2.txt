@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "LINE1: Yes, \"Best Abrasives\" logo text in the corner.\nLINE2: Man sanding a large wooden board in a workshop.\nLINE3: Good.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789801459,
+  "id": "202609191504174fb498a5e92a4d3a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609191504174fb498a5e92a4d3a",
+  "usage": {
+    "completion_tokens": 37,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1109,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1146
+  }
+}

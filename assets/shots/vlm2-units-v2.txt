@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "1. **Quality: 7/10** – Strong brand identity and professional layout, but the execution feels slightly disjointed in the lower sections.\n2. **Photography:** Yes, the main hero and unit cards feature high-quality, prominent imagery that remains clear and unmuddied by the subtle text overlays.\n3. **Biggest Problem:** The \"Inside Sem Hasheela\" section is a major visual letdown; the placeholder green gradient boxes break the established photographic rhythm and look unfinished.\n4. **Concrete Improvement:** Replace the generic gradient placeholders in the bottom grid with actual photography of the apiaries, livestock, and facilities to match the quality of the sections above.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789804362,
+  "id": "202609191552346a78931cbe4c4ce9",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609191552346a78931cbe4c4ce9",
+  "usage": {
+    "completion_tokens": 137,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5692,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5829
+  }
+}

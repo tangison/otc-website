@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Watermark: No\nSubject: Worker welding metal with bright sparks.\nQuality: Good",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789801969,
+  "id": "20260919151244146b14a5765e4b4f",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260919151244146b14a5765e4b4f",
+  "usage": {
+    "completion_tokens": 18,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5941,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5959
+  }
+}

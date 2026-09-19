@@ -1,0 +1,40 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "Namibia northern savanna landscape trees"
+✅ Got 4 images
+{
+  "success": true,
+  "query": "Namibia northern savanna landscape trees",
+  "count": 4,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8a7de5eb5a44.jpg",
+      "caption": "",
+      "source": "One Earth",
+      "original_width": "1600px",
+      "original_height": "1058px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/2a4527f62481.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "956px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d8173776a6f4.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "956px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/22d29ff7f2ba.jpg",
+      "caption": "",
+      "source": "Safari Memories",
+      "original_width": "700px",
+      "original_height": "1200px"
+    }
+  ]
+}

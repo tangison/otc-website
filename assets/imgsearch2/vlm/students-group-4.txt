@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "LINE1: No watermark.\nLINE2: Student in uniform holding certificates and a medal.\nLINE3: Good.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789801854,
+  "id": "2026091915105319afb31307c343f5",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026091915105319afb31307c343f5",
+  "usage": {
+    "completion_tokens": 24,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1397,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1421
+  }
+}

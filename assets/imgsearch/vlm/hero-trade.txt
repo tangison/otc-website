@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Watermark: No\nSubject: Students practicing carpentry skills in a workshop\nQuality: Good",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789800946,
+  "id": "2026091914554398c6be1900b04531",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026091914554398c6be1900b04531",
+  "usage": {
+    "completion_tokens": 20,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 3616,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 3636
+  }
+}

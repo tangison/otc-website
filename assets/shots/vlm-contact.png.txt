@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "4/10\nText-heavy and generic; lacks the polish, whitespace, or sophisticated typography of a premium, image-led brand.\nThe heavy blue gradient overlay completely muddies the hero image, making it look low-quality and washing out the subject.\nThe bold, high-contrast serif headline provides a strong typographic anchor that attempts to elevate the otherwise flat layout.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789804200,
+  "id": "202609191549571b65d45fc6e74a20",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609191549571b65d45fc6e74a20",
+  "usage": {
+    "completion_tokens": 74,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1738,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1812
+  }
+}

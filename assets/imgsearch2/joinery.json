@@ -1,0 +1,40 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "woodworker sanding wooden furniture carpentry workshop"
+✅ Got 4 images
+{
+  "success": true,
+  "query": "woodworker sanding wooden furniture carpentry workshop",
+  "count": 4,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6d38a06b5a2e.jpeg",
+      "caption": "",
+      "source": "Pexels",
+      "original_width": "4000px",
+      "original_height": "2667px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8b3e0e1d4f79.jpg",
+      "caption": "",
+      "source": "Amazon.com",
+      "original_width": "1601px",
+      "original_height": "1601px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/efd9b6a1ec14.jpg",
+      "caption": "",
+      "source": "YouTube",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/4245be638029.jpg",
+      "caption": "",
+      "source": "Tennessee Wood Flooring",
+      "original_width": "1024px",
+      "original_height": "1242px"
+    }
+  ]
+}

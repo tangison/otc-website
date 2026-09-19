@@ -1,0 +1,47 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "African shopkeeper standing in small grocery store"
+✅ Got 5 images
+{
+  "success": true,
+  "query": "African shopkeeper standing in small grocery store",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/36f2a7603aa1.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "955px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/9c9b39f557e5.jpg",
+      "caption": "",
+      "source": "WTTW",
+      "original_width": "1920px",
+      "original_height": "1080px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/cdf929a58cce.jpg",
+      "caption": "",
+      "source": "The Santa Barbara Independent",
+      "original_width": "2048px",
+      "original_height": "1365px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/73d7d2cc9809.jpg",
+      "caption": "",
+      "source": "Business Insider",
+      "original_width": "1200px",
+      "original_height": "900px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/774b7f097343.jpg",
+      "caption": "",
+      "source": "The Jakarta Post",
+      "original_width": "1360px",
+      "original_height": "908px"
+    }
+  ]
+}

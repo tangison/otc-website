@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Quality: 6/10. Strong branding and typography, but the layout feels unfinished and disjointed.\nYes, the hero photography is prominent and well-treated with a clean gradient overlay that preserves the action and detail of the welding shot.\nThe massive, empty vertical whitespace between the hero section and the \"Seven trades\" block creates a jarring visual void that breaks the page's rhythm.\nFill that central white gap with a \"Why Choose Us\" or \"Student Life\" content strip to bridge the visual disconnect between the top and bottom of the page.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789804348,
+  "id": "20260919155216d58d8d1babe54819",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260919155216d58d8d1babe54819",
+  "usage": {
+    "completion_tokens": 111,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5820,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5931
+  }
+}

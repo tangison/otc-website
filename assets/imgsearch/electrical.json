@@ -1,0 +1,40 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "electrician trainee wiring electrical panel workshop"
+✅ Got 4 images
+{
+  "success": true,
+  "query": "electrician trainee wiring electrical panel workshop",
+  "count": 4,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f7623efc360c.jpg",
+      "caption": "",
+      "source": "MTC Training",
+      "original_width": "2048px",
+      "original_height": "1466px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/926bb399ee03.jpeg",
+      "caption": "",
+      "source": "Reddit",
+      "original_width": "1080px",
+      "original_height": "1440px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/0771544e5f45.png",
+      "caption": "",
+      "source": "tradesafe",
+      "original_width": "1800px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/dd1806bfd104.jpg",
+      "caption": "",
+      "source": "Johnson College",
+      "original_width": "2560px",
+      "original_height": "1440px"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "LINE1: No, but has a \"WAREHOUSE STOCK\" text overlay.\nLINE2: Industrial warehouse storing metal coils and pipes.\nLINE3: Good.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789801484,
+  "id": "202609191504421926941a0b39409a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609191504421926941a0b39409a",
+  "usage": {
+    "completion_tokens": 33,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2773,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2806
+  }
+}

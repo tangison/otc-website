@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "LINE1 watermark: yes\nLINE2 subject: Worker using angle grinder on metal\nLINE3 quality: good",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789800984,
+  "id": "20260919145619bd52e78dac894f21",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260919145619bd52e78dac894f21",
+  "usage": {
+    "completion_tokens": 23,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1808,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1831
+  }
+}
