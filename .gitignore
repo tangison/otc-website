@@ -62,3 +62,4 @@ db/
 GATES.md
 .claude
 .vercel/
+/scripts/
