@@ -221,7 +221,7 @@ export function UnitPanels() {
         <ul className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-5">
           {AGRI_STRIP.map((item) => (
             <li key={item.label} className="group relative overflow-hidden rounded-2xl">
-              <span className="block aspect-[3/4]">
+              <span className="block aspect-[3/4] bg-navy/10">
                 <Image
                   src={item.image}
                   alt={item.alt}

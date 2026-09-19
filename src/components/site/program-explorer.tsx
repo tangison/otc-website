@@ -82,7 +82,7 @@ function CourseMosaic({ courses, prices = false }: { courses: Course[]; prices?:
               aria-haspopup="dialog"
               className="group relative block w-full overflow-hidden rounded-2xl bg-navy text-left shadow-[0_24px_48px_-24px_rgba(1,0,127,0.35)] transition-transform duration-500 hover:-translate-y-1"
             >
-              <span className="block aspect-[16/10]">
+              <span className="block aspect-[16/10] bg-navy/10">
                 <Image
                   src={course.image}
                   alt={course.alt}
@@ -125,7 +125,7 @@ function CourseMosaic({ courses, prices = false }: { courses: Course[]; prices?:
         <DialogContent className="max-w-3xl overflow-hidden rounded-3xl border-none p-0">
           {open ? (
             <>
-              <div className="relative h-56 w-full overflow-hidden md:h-72">
+              <div className="relative h-56 w-full overflow-hidden bg-navy/10 md:h-72">
                 <Image
                   src={open.image}
                   alt={open.alt}

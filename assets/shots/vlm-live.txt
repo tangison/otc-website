@@ -1,0 +1,30 @@
+🚀 Initializing Z-AI SDK...
+🚀 Sending vision chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**7/10.** A solid, professional foundation with strong typography and a clear visual hierarchy, though it lacks the micro-interactions and bespoke motion design that define elite university digital experiences.\n\n**Yes.** The hero and program headers successfully leverage high-impact photography to carry the narrative, while the body copy remains concise and scannable, avoiding the \"wall of text\" trap common in institutional sites.\n\n**The programs page feels visually empty below the fold;** the tabbed interface needs richer card designs or visual cues to guide the user’s eye once they scroll past the hero image.\n\n**Ship it.** The brand voice is consistent, the technical execution is clean, and the current state effectively communicates value to prospective students—further polish can happen in post-launch iterations.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789805179,
+  "id": "202609191606139cce51afa2a64bb0",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609191606139cce51afa2a64bb0",
+  "usage": {
+    "completion_tokens": 158,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5085,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5243
+  }
+}

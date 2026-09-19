@@ -72,7 +72,7 @@ export default function ProgramsPage() {
           {DISCIPLINES.map((d) => (
             <li key={d.name} className="w-64 shrink-0 snap-start md:w-72">
               <div className="group relative overflow-hidden rounded-2xl">
-                <span className="block aspect-[3/4]">
+                <span className="block aspect-[3/4] bg-navy/10">
                   <Image
                     src={d.image}
                     alt={d.alt}

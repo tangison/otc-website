@@ -197,7 +197,7 @@ export default function HomePage() {
                   href="/programs"
                   className="group relative block overflow-hidden rounded-2xl"
                 >
-                  <span className={i === 0 ? "block aspect-[16/9]" : "block aspect-[4/3]"}>
+                  <span className={i === 0 ? "block aspect-[16/9] bg-navy/10" : "block aspect-[4/3] bg-navy/10"}>
                     <Image
                       src={trade.image}
                       alt={trade.alt}
@@ -231,7 +231,7 @@ export default function HomePage() {
           {UNITS.map((unit, i) => (
             <Reveal as="li" key={unit.name} delay={i * 80}>
               <Link href="/units" className="group relative block overflow-hidden rounded-2xl">
-                <span className="block aspect-[3/4]">
+                <span className="block aspect-[3/4] bg-navy/10">
                   <Image
                     src={unit.image}
                     alt={unit.alt}
