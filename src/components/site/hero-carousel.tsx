@@ -21,11 +21,18 @@ export default function HeroCarousel({
     reduceRef.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   }, []);
 
-  const next = useCallback(() => setActive((a) => (a + 1) % slides.length), [slides.length]);
-
-  useEffect(() => {
-    setVisited((v) => (v.has(active) ? v : new Set(v).add(active)));
-  }, [active]);
+  // Slide state updates always mark the slide as visited so it mounts
+  const goTo = useCallback((i: number) => {
+    setActive(i);
+    setVisited((v) => (v.has(i) ? v : new Set(v).add(i)));
+  }, []);
+  const next = useCallback(() => {
+    setActive((a) => {
+      const n = (a + 1) % slides.length;
+      setVisited((v) => (v.has(n) ? v : new Set(v).add(n)));
+      return n;
+    });
+  }, [slides.length]);
 
   useEffect(() => {
     if (reduceRef.current) return;
@@ -64,7 +71,7 @@ export default function HeroCarousel({
           <button
             key={s.src}
             type="button"
-            onClick={() => setActive(i)}
+            onClick={() => goTo(i)}
             aria-label={`Show photo ${i + 1} of ${slides.length}: ${s.caption}`}
             aria-current={i === active}
             className="h-2.5 w-2.5 rounded-full border border-white/70 transition-colors focus-visible-ring"
