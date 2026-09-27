@@ -38,7 +38,7 @@ export default function HeroCarousel({
     if (reduceRef.current) return;
     const t = setInterval(() => {
       if (!pausedRef.current) next();
-    }, 5200);
+    }, 8000);
     return () => clearInterval(t);
   }, [next]);
 

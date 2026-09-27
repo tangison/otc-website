@@ -91,7 +91,7 @@ export default function HomePage() {
         <div className="mt-12 grid gap-x-8 gap-y-12 lg:grid-cols-12">
           {trades.map((t, i) => (
             <Reveal key={t.slug} delay={(i % 2) * 100} className={spans[i]}>
-              <TradeTile trade={t} aspect={aspects[i]} priority={i === 0} />
+              <TradeTile trade={t} aspect={aspects[i]} />
             </Reveal>
           ))}
         </div>
