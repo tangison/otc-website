@@ -13,6 +13,7 @@ export default function HeroCarousel({
   aspect?: string;
 }) {
   const [active, setActive] = useState(0);
+  const [visited, setVisited] = useState<Set<number>>(() => new Set([0]));
   const pausedRef = useRef(false);
   const reduceRef = useRef(false);
 
@@ -21,6 +22,10 @@ export default function HeroCarousel({
   }, []);
 
   const next = useCallback(() => setActive((a) => (a + 1) % slides.length), [slides.length]);
+
+  useEffect(() => {
+    setVisited((v) => (v.has(active) ? v : new Set(v).add(active)));
+  }, [active]);
 
   useEffect(() => {
     if (reduceRef.current) return;
@@ -40,14 +45,16 @@ export default function HeroCarousel({
     >
       {slides.map((s, i) => (
         <div key={s.src} className={`hero-slide absolute inset-0 ${i === active ? "is-active" : ""}`} aria-hidden={i !== active}>
-          <Image
-            src={s.src}
-            alt={i === active ? s.alt : ""}
-            fill
-            priority={i === 0}
-            sizes="(max-width: 1024px) 100vw, 44vw"
-            className="object-cover"
-          />
+          {visited.has(i) ? (
+            <Image
+              src={s.src}
+              alt={i === active ? s.alt : ""}
+              fill
+              priority={i === 0}
+              sizes="(max-width: 1024px) 100vw, 44vw"
+              className="object-cover"
+            />
+          ) : null}
         </div>
       ))}
       <p className="caption-chip">{slides[active].caption}</p>

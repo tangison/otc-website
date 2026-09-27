@@ -10,7 +10,7 @@ const display = Fraunces({
   variable: "--font-display",
   subsets: ["latin"],
   display: "swap",
-  axes: ["SOFT", "WONK", "opsz"],
+  axes: ["opsz"],
 });
 
 const body = Outfit({
