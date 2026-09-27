@@ -4,7 +4,7 @@ import Link from "next/link";
 import PageHero from "@/components/site/page-hero";
 import Reveal from "@/components/site/reveal";
 import SectionHead from "@/components/site/section-head";
-import GalleryCarousel from "@/components/site/gallery-carousel";
+import LazyGallery from "@/components/site/lazy-gallery";
 import { partners } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -140,7 +140,7 @@ export default function PartnersPage() {
           lede="Expos, outreach demonstrations and campus works: OTC in public, photographed at its own events."
         />
         <Reveal className="mt-12">
-          <GalleryCarousel items={partnerGallery} label="Partnership and presence photos" />
+          <LazyGallery items={partnerGallery} label="Partnership and presence photos" />
         </Reveal>
 
         {/* Pending partner slots, honestly marked */}

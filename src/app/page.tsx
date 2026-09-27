@@ -3,7 +3,7 @@ import Image from "next/image";
 import Reveal from "@/components/site/reveal";
 import SectionHead from "@/components/site/section-head";
 import HeroCarousel from "@/components/site/hero-carousel";
-import GalleryCarousel from "@/components/site/gallery-carousel";
+import LazyGallery from "@/components/site/lazy-gallery";
 import TradeTile from "@/components/site/trade-tile";
 import { site, stats, trades, agriCarousel, partners } from "@/lib/site";
 
@@ -231,7 +231,7 @@ export default function HomePage() {
             lede="Fencing and land works at the OTC AgriCampus, from construction through to handover. A college that is still building is a college that is still going places."
           />
           <Reveal className="mt-12">
-            <GalleryCarousel items={agriCarousel} label="AgriCampus development photos" />
+            <LazyGallery items={agriCarousel} label="AgriCampus development photos" />
           </Reveal>
         </div>
       </section>
