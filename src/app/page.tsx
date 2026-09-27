@@ -41,13 +41,13 @@ export default function HomePage() {
               nine short courses in real workshops. Training you can put your hands on.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link
+              <Link prefetch={false}
                 href="/admissions"
                 className="inline-flex min-h-[48px] items-center rounded-sm bg-otc-navy px-6 text-base font-semibold text-white transition-colors hover:bg-otc-navy-deep"
               >
                 Apply to OTC
               </Link>
-              <Link
+              <Link prefetch={false}
                 href="/programmes"
                 className="inline-flex min-h-[48px] items-center rounded-sm border border-otc-navy/30 px-6 text-base font-semibold text-otc-navy transition-colors hover:bg-secondary"
               >
@@ -99,7 +99,7 @@ export default function HomePage() {
           <p className="text-[0.95rem] text-otc-ink/80">
             OTC offers <strong className="font-semibold text-otc-navy">seven full-time NVC trades</strong> in
             total and nine short courses. The current list is confirmed by admissions at every intake:{" "}
-            <Link href="/contact" className="font-medium text-otc-navy underline-offset-4 hover:underline">
+            <Link prefetch={false} href="/contact" className="font-medium text-otc-navy underline-offset-4 hover:underline">
               ask the college
             </Link>
             .
@@ -172,7 +172,7 @@ export default function HomePage() {
             </Reveal>
           </div>
           <Reveal className="mt-10">
-            <Link
+            <Link prefetch={false}
               href="/partners"
               className="link-underline inline-flex items-center gap-2 text-[0.95rem] font-semibold text-otc-navy"
             >
@@ -210,7 +210,7 @@ export default function HomePage() {
                 building, mechanics, agriculture. Many step straight into self-employment, and the
                 college's entrepreneurship focus is there to back them.
               </p>
-              <Link
+              <Link prefetch={false}
                 href="/programmes"
                 className="link-underline mt-6 inline-flex items-center gap-2 text-[0.95rem] font-semibold text-otc-navy"
               >
@@ -250,13 +250,13 @@ export default function HomePage() {
               </p>
             </Reveal>
             <Reveal delay={120} className="flex flex-wrap gap-3 lg:justify-end">
-              <Link
+              <Link prefetch={false}
                 href="/admissions"
                 className="inline-flex min-h-[48px] items-center rounded-sm bg-otc-gold px-6 text-base font-semibold text-otc-ink transition-colors hover:bg-[#c09a15]"
               >
                 Apply to OTC
               </Link>
-              <Link
+              <Link prefetch={false}
                 href="/contact"
                 className="inline-flex min-h-[48px] items-center rounded-sm border border-white/35 px-6 text-base font-semibold text-white transition-colors hover:bg-white/10"
               >

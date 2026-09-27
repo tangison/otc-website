@@ -53,13 +53,13 @@ function TradeDetails({ trade }: { trade: Trade }) {
       </dl>
 
       <div className="flex flex-wrap gap-3">
-        <Link
+        <Link prefetch={false}
           href="/admissions"
           className="inline-flex min-h-[44px] items-center rounded-sm bg-otc-navy px-5 text-sm font-semibold text-white transition-colors hover:bg-otc-navy-deep"
         >
           How to apply
         </Link>
-        <Link
+        <Link prefetch={false}
           href="/contact"
           className="inline-flex min-h-[44px] items-center rounded-sm border border-otc-navy/30 px-5 text-sm font-semibold text-otc-navy transition-colors hover:bg-secondary"
         >

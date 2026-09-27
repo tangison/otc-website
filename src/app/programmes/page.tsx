@@ -71,7 +71,7 @@ export default function ProgrammesPage() {
               <p className="text-[0.95rem] text-otc-ink/80">
                 The college offers seven full-time NVC trades in total. The complete, current list is
                 confirmed by admissions at every intake:{" "}
-                <Link href="/contact" className="font-medium text-otc-navy underline-offset-4 hover:underline">
+                <Link prefetch={false} href="/contact" className="font-medium text-otc-navy underline-offset-4 hover:underline">
                   ask the college
                 </Link>
                 .
@@ -101,7 +101,7 @@ export default function ProgrammesPage() {
                   >
                     Phone {site.phoneDisplay}
                   </a>
-                  <Link
+                  <Link prefetch={false}
                     href="/contact"
                     className="inline-flex min-h-[44px] items-center rounded-sm border border-otc-navy/30 px-5 text-sm font-semibold text-otc-navy transition-colors hover:bg-secondary"
                   >
@@ -154,7 +154,7 @@ export default function ProgrammesPage() {
             lede="Every trade tile lists its career pathways. Employers, apprenticeships and the Bulawayo Polytechnic partnership sit on the partners page."
           />
           <Reveal className="mt-8">
-            <Link
+            <Link prefetch={false}
               href="/partners"
               className="link-underline inline-flex items-center gap-2 text-[0.95rem] font-semibold text-otc-navy"
             >

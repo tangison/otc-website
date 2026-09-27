@@ -221,7 +221,7 @@ export default function AboutPage() {
           <Reveal className="mt-10">
             <p className="text-sm text-otc-ink/60">
               Prefer to verify in person? The college welcomes visits:{" "}
-              <Link href="/contact" className="font-medium text-otc-navy underline-offset-4 hover:underline">
+              <Link prefetch={false} href="/contact" className="font-medium text-otc-navy underline-offset-4 hover:underline">
                 arrange one on the contact page
               </Link>
               .

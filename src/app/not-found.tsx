@@ -15,13 +15,13 @@ export default function NotFound() {
         always is: in Ongenga, Ohangwena Region.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
-        <Link
+        <Link prefetch={false}
           href="/"
           className="inline-flex min-h-[48px] items-center rounded-sm bg-otc-navy px-6 text-base font-semibold text-white transition-colors hover:bg-otc-navy-deep"
         >
           Back to the homepage
         </Link>
-        <Link
+        <Link prefetch={false}
           href="/programmes"
           className="inline-flex min-h-[48px] items-center rounded-sm border border-otc-navy/30 px-6 text-base font-semibold text-otc-navy transition-colors hover:bg-secondary"
         >

@@ -35,7 +35,7 @@ export default function SiteHeader() {
         }`}
       >
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-          <Link
+          <Link prefetch={false}
             href="/"
             className="flex items-center gap-3 py-3 focus-visible-ring"
             aria-label={`${site.name}, home`}
@@ -64,7 +64,7 @@ export default function SiteHeader() {
                   item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
                 return (
                   <li key={item.href}>
-                    <Link
+                    <Link prefetch={false}
                       href={item.href}
                       aria-current={active ? "page" : undefined}
                       className={`link-underline py-2 text-[0.95rem] font-medium focus-visible-ring ${
@@ -77,7 +77,7 @@ export default function SiteHeader() {
                 );
               })}
               <li>
-                <Link
+                <Link prefetch={false}
                   href="/admissions"
                   className="inline-flex min-h-[44px] items-center rounded-sm bg-otc-navy px-5 text-[0.95rem] font-semibold text-white transition-colors hover:bg-otc-navy-deep focus-visible-ring"
                 >
@@ -113,7 +113,7 @@ export default function SiteHeader() {
           <ul className="space-y-1">
             {nav.map((item) => (
               <li key={item.href}>
-                <Link
+                <Link prefetch={false}
                   href={item.href}
                   tabIndex={open ? 0 : -1}
                   onClick={() => setOpen(false)}
@@ -124,7 +124,7 @@ export default function SiteHeader() {
               </li>
             ))}
           </ul>
-          <Link
+          <Link prefetch={false}
             href="/admissions"
             tabIndex={open ? 0 : -1}
             onClick={() => setOpen(false)}

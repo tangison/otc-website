@@ -27,7 +27,7 @@ export default function SiteFooter() {
             <ul className="mt-4 space-y-2.5 text-sm">
               {nav.slice(1).map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-white/80 transition-colors hover:text-white">
+                  <Link prefetch={false} href={item.href} className="text-white/80 transition-colors hover:text-white">
                     {item.label}
                   </Link>
                 </li>
@@ -41,17 +41,17 @@ export default function SiteFooter() {
             </p>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li>
-                <Link href="/brand" className="text-white/80 transition-colors hover:text-white">
+                <Link prefetch={false} href="/brand" className="text-white/80 transition-colors hover:text-white">
                   Brand
                 </Link>
               </li>
               <li>
-                <Link href="/privacy-policy" className="text-white/80 transition-colors hover:text-white">
+                <Link prefetch={false} href="/privacy-policy" className="text-white/80 transition-colors hover:text-white">
                   Privacy policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-white/80 transition-colors hover:text-white">
+                <Link prefetch={false} href="/terms" className="text-white/80 transition-colors hover:text-white">
                   Terms of use
                 </Link>
               </li>

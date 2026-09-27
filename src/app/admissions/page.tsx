@@ -82,7 +82,7 @@ export default function AdmissionsPage() {
           >
             Phone {site.phoneDisplay}
           </a>
-          <Link
+          <Link prefetch={false}
             href="/contact"
             className="inline-flex min-h-[48px] items-center rounded-sm border border-otc-navy/30 px-6 text-base font-semibold text-otc-navy transition-colors hover:bg-secondary"
           >
@@ -167,7 +167,7 @@ export default function AdmissionsPage() {
             </p>
           </Reveal>
           <Reveal delay={120} className="flex flex-wrap gap-3 lg:justify-end">
-            <Link
+            <Link prefetch={false}
               href="/contact"
               className="inline-flex min-h-[48px] items-center rounded-sm bg-otc-gold px-6 text-base font-semibold text-otc-ink transition-colors hover:bg-[#c09a15]"
             >

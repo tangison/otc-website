@@ -123,7 +123,7 @@ export default function PartnersPage() {
             <p className="text-[0.95rem] text-otc-ink/80">
               Employer, or know one? Named industry partners will be listed here with their own
               logotypes as agreements are confirmed.{" "}
-              <Link href="/contact" className="font-medium text-otc-navy underline-offset-4 hover:underline">
+              <Link prefetch={false} href="/contact" className="font-medium text-otc-navy underline-offset-4 hover:underline">
                 Start the conversation
               </Link>
               .
