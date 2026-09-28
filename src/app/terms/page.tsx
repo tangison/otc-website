@@ -15,7 +15,7 @@ export default function TermsPage() {
   return (
     <>
       <PageHero
-        image="/images/g-agri-2.webp"
+        image="/images/agri-build-07.webp"
         alt="Fence line works at the OTC AgriCampus"
         caption="AgriCampus works, OTC"
         title="Terms of use"

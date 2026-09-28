@@ -3,6 +3,8 @@ import { Fraunces, Outfit } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/site/site-header";
 import SiteFooter from "@/components/site/site-footer";
+import LandingSplash from "@/components/site/landing-splash";
+import ScrollTop from "@/components/site/scroll-top";
 import { site } from "@/lib/site";
 
 const display = Fraunces({
@@ -33,10 +35,16 @@ export const metadata: Metadata = {
     "TVET Namibia",
     "NVC courses Namibia",
     "Ohangwena Region college",
+    "Ongenga college",
+    "trade school Namibia",
     "welding course Namibia",
     "electrical training Namibia",
     "auto mechanics course Namibia",
     "horticulture training Namibia",
+    "bricklaying course Namibia",
+    "joinery course Namibia",
+    "short courses Namibia",
+    "artisan training Ohangwena",
   ],
   authors: [{ name: site.name }],
   alternates: { canonical: "/" },
@@ -109,9 +117,11 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
+        <LandingSplash />
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
+        <ScrollTop />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

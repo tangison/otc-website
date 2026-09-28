@@ -61,3 +61,12 @@ server.log
 /worklog.md
 upload/
 tests/
+
+# OTC build session artifacts
+/otc-assets/
+/shots/
+/skills-hunt/
+/tmp-filebin.json
+prod-server.log
+mini-services/
+examples/

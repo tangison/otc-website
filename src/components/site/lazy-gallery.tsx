@@ -14,10 +14,12 @@ export default function LazyGallery({
   items,
   heightClass,
   label,
+  quality = 60,
 }: {
   items: CarouselItem[];
   heightClass?: string;
   label?: string;
+  quality?: number;
 }) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [show, setShow] = useState(false);
@@ -39,7 +41,7 @@ export default function LazyGallery({
   }, []);
 
   if (show) {
-    return <GalleryCarousel items={items} heightClass={heightClass} label={label} />;
+    return <GalleryCarousel items={items} heightClass={heightClass} label={label} quality={quality} />;
   }
   return (
     <div ref={ref}>

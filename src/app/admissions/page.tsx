@@ -10,6 +10,7 @@ import PageHero from "@/components/site/page-hero";
 import Reveal from "@/components/site/reveal";
 import SectionHead from "@/components/site/section-head";
 import { site } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Admissions and How to Apply",
@@ -50,7 +51,7 @@ export default function AdmissionsPage() {
   return (
     <>
       <PageHero
-        image="/images/hero-classroom.webp"
+        image="/images/classrooms-04.webp"
         alt="An instructor addressing trainees seated in the OTC lecture hall"
         caption="Admissions sessions run at the OTC campus"
         title="Apply to OTC"
@@ -104,7 +105,7 @@ export default function AdmissionsPage() {
               <Reveal className="mt-8">
                 <div className="img-frame relative aspect-[4/3]">
                   <img
-                    src="/images/hero-branded.webp"
+                    src="/images/classrooms-02.webp"
                     alt="OTC trainees in branded college jackets during a session"
                     className="h-full w-full object-cover"
                     loading="lazy"
@@ -113,6 +114,22 @@ export default function AdmissionsPage() {
                 </div>
               </Reveal>
             </div>
+          <Reveal className="mt-10">
+            <div className="grid grid-cols-3 gap-3">
+              {[
+                { src: "/images/classrooms-06-c.webp", caption: "Lecture rooms" },
+                { src: "/images/workshop-04-c.webp", caption: "Workshops" },
+                { src: "/images/auto-01-c.webp", caption: "Vehicle bay" },
+              ].map((g) => (
+                <figure key={g.src}>
+                  <div className="img-frame relative aspect-[4/3]">
+                    <Image src={g.src} alt={g.caption} fill sizes="(max-width: 640px) 33vw, 220px" quality={55} className="object-cover" />
+                    <p className="caption-chip">{g.caption}</p>
+                  </div>
+                </figure>
+              ))}
+            </div>
+          </Reveal>
             <Reveal delay={100}>
               <Accordion type="single" collapsible className="w-full">
                 {[

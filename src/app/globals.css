@@ -140,6 +140,19 @@
     @apply bg-background text-foreground;
     font-feature-settings: "ss01" on;
   }
+  a,
+  button {
+    touch-action: manipulation;
+  }
+  .display-1,
+  .display-2,
+  .display-3 {
+    text-wrap: balance;
+  }
+  p,
+  li {
+    text-wrap: pretty;
+  }
   ::selection {
     background: #d6ad1b;
     color: #0a0800;
@@ -267,6 +280,199 @@
   .focus-visible-ring:focus-visible {
     outline: 2px solid #0e0aae;
     outline-offset: 2px;
+  }
+
+  /* Ken Burns: slow drift on the active hero slide */
+  .kenburns {
+    animation: kenburns 9s ease-out forwards;
+  }
+  @keyframes kenburns {
+    from {
+      transform: scale(1.06) translateY(-6px);
+    }
+    to {
+      transform: scale(1) translateY(0);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .kenburns {
+      animation: none;
+    }
+  }
+
+  /* Hero pace line drains between slides */
+  @keyframes hero-pace {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-pace {
+      animation: none;
+    }
+  }
+
+  /* Trades ticker: linear is correct for a marquee */
+  .ticker {
+    overflow: hidden;
+  }
+  .ticker-track {
+    display: flex;
+    width: max-content;
+  }
+  .ticker-row {
+    display: flex;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .ticker:hover .ticker-track,
+  .ticker:focus-within .ticker-track {
+    animation-play-state: paused;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track {
+      animation: none;
+      width: auto;
+      flex-wrap: wrap;
+    }
+    .ticker-row[aria-hidden="true"] {
+      display: none;
+    }
+  }
+  @keyframes ticker-scroll {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .ticker-track {
+      animation: ticker-scroll 36s linear infinite;
+    }
+  }
+
+  /* Headline entrance: two staged lines that rise once, on load only */
+  .rise {
+    opacity: 0;
+    transform: translateY(22px);
+    animation: rise 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: var(--rise-delay, 0ms);
+  }
+  @keyframes rise {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .rise {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+  }
+
+  /* Press feedback: buttons dip slightly, feels physical */
+  .press {
+    transition: transform 0.12s ease;
+  }
+  .press:active {
+    transform: scale(0.975);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .press,
+    .press:active {
+      transform: none;
+    }
+  }
+
+  /* Landing splash: crest lands, curtain lifts, gone for good */
+  .splash-lock {
+    overflow: hidden;
+  }
+  .splash {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: grid;
+    place-items: center;
+    background: #0a0868;
+    animation: splash-lift 0.65s cubic-bezier(0.65, 0, 0.35, 1) 1.25s forwards;
+  }
+  .splash-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+  .splash-crest {
+    margin-inline: auto;
+    animation: crest-land 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .splash-word {
+    margin-top: 1.25rem;
+    font-family: var(--font-display), Georgia, serif;
+    font-size: clamp(1.35rem, 4vw, 2rem);
+    font-weight: 560;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    opacity: 0;
+    animation: rise 0.6s ease 0.35s forwards;
+  }
+  .splash-tag {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #d6ad1b;
+    opacity: 0;
+    animation: rise 0.6s ease 0.6s forwards;
+  }
+  .splash-rule {
+    display: block;
+    width: 56px;
+    height: 3px;
+    margin: 1.1rem auto 0;
+    background: #d6ad1b;
+    transform: scaleX(0);
+    animation: rule-grow 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.75s forwards;
+  }
+  .splash-curtain {
+    position: absolute;
+    inset: 0;
+    background: #0a0868;
+    transform-origin: top;
+  }
+  @keyframes crest-land {
+    from {
+      opacity: 0;
+      transform: translateY(14px) scale(0.92);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  @keyframes rule-grow {
+    to {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes splash-lift {
+    to {
+      transform: translateY(-100%);
+      visibility: hidden;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .splash {
+      display: none;
+    }
   }
 }
 

@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        image="/images/hero-classroom.webp"
+        image="/images/classrooms-04.webp"
         alt="An instructor leading a class in the OTC lecture hall"
         caption="Training session, OTC lecture hall"
         title="A college built for the Ohangwena Region"
@@ -32,20 +32,22 @@ export default function AboutPage() {
             <Reveal className="mt-8 grid grid-cols-2 gap-4">
               <div className="img-frame relative aspect-[4/5]">
                 <Image
-                  src="/images/story-signage.webp"
+                  src="/images/signage-01.webp"
                   alt="The Ongenga Technical College campus entrance signage"
                   fill
                   sizes="(max-width: 1024px) 50vw, 20vw"
+                  quality={60}
                   className="object-cover"
                 />
                 <p className="caption-chip">Campus entrance, Ongenga</p>
               </div>
               <div className="img-frame relative mt-8 aspect-[4/5]">
                 <Image
-                  src="/images/g-classroom-2.webp"
+                  src="/images/classrooms-05.webp"
                   alt="Trainees listening during a session at OTC"
                   fill
                   sizes="(max-width: 1024px) 50vw, 20vw"
+                  quality={60}
                   className="object-cover"
                 />
                 <p className="caption-chip">In class at OTC</p>
@@ -175,7 +177,7 @@ export default function AboutPage() {
             <Reveal>
               <div className="img-frame relative aspect-[16/10]">
                 <Image
-                  src="/images/story-certificate.webp"
+                  src="/images/graduation-02.webp"
                   alt="An OTC graduate holding the college's certificate folder"
                   fill
                   sizes="(max-width: 1024px) 100vw, 46vw"
@@ -250,7 +252,7 @@ export default function AboutPage() {
           <Reveal delay={120}>
             <div className="img-frame relative aspect-[4/3]">
               <Image
-                src="/images/story-team.webp"
+                src="/images/team-01.webp"
                 alt="OTC staff and visitors together outside the campus buildings"
                 fill
                 sizes="(max-width: 1024px) 100vw, 44vw"

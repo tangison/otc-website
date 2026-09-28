@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/site/page-hero";
+import LazyGallery from "@/components/site/lazy-gallery";
+import { campusCarousel } from "@/lib/site";
 import Reveal from "@/components/site/reveal";
 import SectionHead from "@/components/site/section-head";
 
@@ -24,7 +26,7 @@ export default function BrandPage() {
   return (
     <>
       <PageHero
-        image="/images/hero-branded.webp"
+        image="/images/classrooms-02.webp"
         alt="OTC trainees wearing the college's branded jackets"
         caption="Brand in use: OTC jackets, theory session"
         title="The OTC brand system"
@@ -40,10 +42,10 @@ export default function BrandPage() {
         />
         <Reveal className="mt-10 grid gap-8 lg:grid-cols-2">
           <div className="flex items-center justify-center border border-border bg-white p-10">
-            <img src="/icons/icon-512.png" alt="The OTC crest on the brand navy" className="h-40 w-40" />
+            <img src="/icons/icon-512.png" alt="The OTC crest on the brand navy" width={160} height={160} className="h-40 w-40" />
           </div>
           <div className="flex items-center justify-center border border-border bg-white p-10">
-            <img src="/favicon.svg" alt="The OTC crest icon" className="h-40 w-40" />
+            <img src="/favicon.svg" alt="The OTC crest icon" width={160} height={160} className="h-40 w-40" />
           </div>
         </Reveal>
         <Reveal className="mt-6 border-l-2 border-otc-gold bg-otc-tint/60 px-5 py-4">
@@ -116,6 +118,19 @@ export default function BrandPage() {
                 third-party font request ever blocks a page.
               </p>
             </div>
+          </Reveal>
+        </div>
+      </section>
+      {/* The crest in the wild: campus photography showing brand assets at work */}
+      <section className="border-t border-border bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+          <SectionHead
+            index="04"
+            title="The crest in the wild"
+            lede="Brand assets at work: signage, banners, branded jackets and the people who carry them. Drag through the campus."
+          />
+          <Reveal className="mt-12">
+            <LazyGallery items={campusCarousel} label="Brand in use across campus photos" />
           </Reveal>
         </div>
       </section>

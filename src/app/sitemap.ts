@@ -8,8 +8,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/programmes", priority: 0.9, freq: "monthly" as const },
     { path: "/admissions", priority: 0.9, freq: "monthly" as const },
     { path: "/about", priority: 0.8, freq: "monthly" as const },
+    { path: "/alumni", priority: 0.8, freq: "monthly" as const },
     { path: "/partners", priority: 0.7, freq: "monthly" as const },
     { path: "/contact", priority: 0.7, freq: "yearly" as const },
+    { path: "/brand", priority: 0.3, freq: "yearly" as const },
     { path: "/privacy-policy", priority: 0.3, freq: "yearly" as const },
     { path: "/terms", priority: 0.3, freq: "yearly" as const },
   ];

@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <PageHero
-        image="/images/g-classroom-1.webp"
+        image="/images/classrooms-01.webp"
         alt="The OTC lecture hall prepared for a training session"
         caption="OTC lecture hall"
         title="Privacy policy"

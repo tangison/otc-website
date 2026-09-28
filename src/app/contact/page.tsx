@@ -16,7 +16,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        image="/images/hero-campus.webp"
+        image="/images/team-03.webp"
         alt="OTC staff standing outside the campus beneath the college banner"
         caption="The OTC campus, Ongenga"
         title="Talk to the college"

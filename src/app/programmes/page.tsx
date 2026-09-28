@@ -35,7 +35,7 @@ export default function ProgrammesPage() {
   return (
     <>
       <PageHero
-        image="/images/hero-electrical.webp"
+        image="/images/workshop-03.webp"
         alt="An OTC electrical student testing a circuit during a practical assessment"
         caption="Electrical practical assessment, OTC"
         title="Learn the trades that build a country"

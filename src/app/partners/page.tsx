@@ -15,18 +15,21 @@ export const metadata: Metadata = {
 };
 
 const partnerGallery = [
-  { src: "/images/g-expo-indoor-1.webp", caption: "OTC booth, indoor expo" },
-  { src: "/images/g-expo-outdoor-2.webp", caption: "Exhibition tent, outdoor expo" },
-  { src: "/images/g-expo-indoor-3.webp", caption: "Visitors at the OTC stand" },
-  { src: "/images/g-outreach-2.webp", caption: "Outreach demonstration with partners" },
-  { src: "/images/g-signage-2.webp", caption: "Campus signage installation" },
+  { src: "/images/expo-indoor-01-c.webp", caption: "OTC booth, indoor expo" },
+  { src: "/images/expo-outdoor-02-c.webp", caption: "Exhibition tent, outdoor expo" },
+  { src: "/images/expo-indoor-03-c.webp", caption: "Visitors at the OTC stand" },
+  { src: "/images/outreach-02-c.webp", caption: "Outreach demonstration with partners" },
+  { src: "/images/signage-02-c.webp", caption: "Campus signage installation" },
+  { src: "/images/graduation-05-c.webp", caption: "Proud OTC graduate with his certificate" },
+  { src: "/images/graduation-06-c.webp", caption: "Recognition ceremony, OTC" },
+  { src: "/images/signage-03-c.webp", caption: "Raising the OTC banner on campus" },
 ];
 
 export default function PartnersPage() {
   return (
     <>
       <PageHero
-        image="/images/hero-expo.webp"
+        image="/images/expo-outdoor-01.webp"
         alt="The OTC exhibition stand at a regional expo with branded banners"
         caption="OTC exhibiting at a regional expo"
         title="Training travels further in company"
@@ -140,7 +143,7 @@ export default function PartnersPage() {
           lede="Expos, outreach demonstrations and campus works: OTC in public, photographed at its own events."
         />
         <Reveal className="mt-12">
-          <LazyGallery items={partnerGallery} label="Partnership and presence photos" />
+          <LazyGallery items={partnerGallery} label="Partnership and presence photos" quality={55} />
         </Reveal>
 
         {/* Pending partner slots, honestly marked */}
@@ -157,7 +160,7 @@ export default function PartnersPage() {
         <Reveal className="mt-8">
           <div className="img-frame relative hidden aspect-[21/9] lg:block">
             <Image
-              src="/images/g-expo-indoor-2.webp"
+              src="/images/expo-indoor-02-c.webp"
               alt="OTC exhibition stand interior with visitors"
               fill
               sizes="100vw"

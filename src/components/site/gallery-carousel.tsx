@@ -11,10 +11,12 @@ export default function GalleryCarousel({
   items,
   heightClass = "h-[300px] sm:h-[380px] lg:h-[440px]",
   label = "Photo gallery",
+  quality = 60,
 }: {
   items: CarouselItem[];
   heightClass?: string;
   label?: string;
+  quality?: number;
 }) {
   const [emblaRef, embla] = useEmblaCarousel({ loop: true, align: "start" });
   const [selected, setSelected] = useState(0);
@@ -61,6 +63,7 @@ export default function GalleryCarousel({
                   alt={item.caption}
                   fill
                   sizes="(max-width: 640px) 86vw, (max-width: 1024px) 55vw, 42vw"
+                  quality={quality}
                   className="object-cover"
                 />
                 <figcaption className="caption-chip">{item.caption}</figcaption>

@@ -9,7 +9,9 @@ function TradeDetails({ trade }: { trade: Trade }) {
   return (
     <div className="space-y-6">
       <div className="img-frame relative aspect-[16/9]">
-        <Image src={trade.image} alt={trade.alt} fill sizes="(max-width: 640px) 90vw, 520px" className="object-cover" />
+        <Image src={trade.image} alt={trade.alt} fill sizes="(max-width: 640px) 90vw, 520px"
+                  quality={60}
+                className="object-cover" />
         <p className="caption-chip">{trade.imageCaption}</p>
       </div>
 
@@ -83,6 +85,7 @@ export default function TradeTile({ trade, span = "", aspect = "aspect-[4/3]", p
                 fill
                 priority={priority}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 42vw"
+                quality={60}
                 className="object-cover"
               />
               <p className="caption-chip">{trade.imageCaption}</p>
