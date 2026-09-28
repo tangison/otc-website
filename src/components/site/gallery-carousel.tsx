@@ -4,8 +4,9 @@ import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import type { CarouselSlide } from "@/lib/site";
 
-export type CarouselItem = { src: string; caption: string };
+export type CarouselItem = CarouselSlide;
 
 export default function GalleryCarousel({
   items,
@@ -60,13 +61,13 @@ export default function GalleryCarousel({
               <figure className={`img-frame relative h-full ${heightClass}`}>
                 <Image
                   src={item.src}
-                  alt={item.caption}
+                  alt={item.alt}
                   fill
                   sizes="(max-width: 640px) 86vw, (max-width: 1024px) 55vw, 42vw"
                   quality={quality}
                   className="object-cover"
                 />
-                <figcaption className="caption-chip">{item.caption}</figcaption>
+                {item.caption ? <figcaption className="caption-chip">{item.caption}</figcaption> : null}
               </figure>
             </div>
           ))}

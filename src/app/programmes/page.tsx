@@ -126,7 +126,7 @@ export default function ProgrammesPage() {
                     },
                     {
                       q: "What do they cost?",
-                      a: "Fees are set per course per intake and published in Namibian dollars by the college. Contact admissions for the current rates; this site does not guess prices.",
+                      a: "Fees are set per course per intake and published in Namibian dollars by the college. Contact admissions for the current rates for the course you want.",
                     },
                   ].map((f, i) => (
                     <AccordionItem key={i} value={`item-${i}`} className="border-border">

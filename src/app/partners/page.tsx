@@ -15,14 +15,17 @@ export const metadata: Metadata = {
 };
 
 const partnerGallery = [
-  { src: "/images/expo-indoor-01-c.webp", caption: "OTC booth, indoor expo" },
-  { src: "/images/expo-outdoor-02-c.webp", caption: "Exhibition tent, outdoor expo" },
-  { src: "/images/expo-indoor-03-c.webp", caption: "Visitors at the OTC stand" },
-  { src: "/images/outreach-02-c.webp", caption: "Outreach demonstration with partners" },
-  { src: "/images/signage-02-c.webp", caption: "Campus signage installation" },
-  { src: "/images/graduation-05-c.webp", caption: "Proud OTC graduate with his certificate" },
-  { src: "/images/graduation-06-c.webp", caption: "Recognition ceremony, OTC" },
-  { src: "/images/signage-03-c.webp", caption: "Raising the OTC banner on campus" },
+  { src: "/images/expo-indoor-01-c.webp", alt: "The OTC booth at an indoor expo" },
+  { src: "/images/expo-outdoor-03-c.webp", alt: "The OTC gazebo stand under a blue sky at an outdoor expo" },
+  { src: "/images/expo-outdoor-02-c.webp", alt: "The OTC exhibition tent at an outdoor expo" },
+  { src: "/images/expo-indoor-03-c.webp", alt: "Visitors at the OTC exhibition stand" },
+  { src: "/images/outreach-02-c.webp", alt: "An outreach demonstration with community members", caption: "Outreach demonstration with community partners" },
+  { src: "/images/agri-handover-04-c.webp", alt: "Guests signing at the register table on AgriCampus handover day", caption: "Signing at the AgriCampus handover" },
+  { src: "/images/agri-handover-07-c.webp", alt: "The handover venue set out under large trees with OTC banners" },
+  { src: "/images/signage-02-c.webp", alt: "The OTC banner installed at the campus" },
+  { src: "/images/graduation-05-c.webp", alt: "An OTC graduate holding his certificate folder" },
+  { src: "/images/graduation-06-c.webp", alt: "The recognition ceremony at OTC" },
+  { src: "/images/signage-03-c.webp", alt: "Raising the OTC banner on campus" },
 ];
 
 export default function PartnersPage() {
@@ -157,18 +160,17 @@ export default function PartnersPage() {
             </Reveal>
           ))}
         </div>
-        <Reveal className="mt-8">
-          <div className="img-frame relative hidden aspect-[21/9] lg:block">
-            <Image
-              src="/images/expo-indoor-02-c.webp"
-              alt="OTC exhibition stand interior with visitors"
-              fill
-              sizes="100vw"
-              className="object-cover"
-            />
-            <p className="caption-chip">OTC stand, indoor expo</p>
-          </div>
-        </Reveal>
+          <Reveal className="mt-8">
+            <div className="img-frame relative hidden aspect-[21/9] lg:block">
+              <Image
+                src="/images/expo-indoor-02-c.webp"
+                alt="OTC exhibition stand interior with visitors"
+                fill
+                sizes="100vw"
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
       </section>
     </>
   );

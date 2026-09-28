@@ -53,7 +53,9 @@ export type Trade = {
   blurb: string;
   qualification: string;
   pathways: string[];
-  imageCaption: string;
+  // Captions are the exception, not the rule. Only set one when the photo
+  // needs explaining; tiles carry the trade name right below the image.
+  imageCaption?: string;
 };
 
 // Six trades are named in the client's review; the college offers seven NVC trades.
@@ -67,7 +69,6 @@ export const trades: Trade[] = [
     blurb: "Join, cut and shape metal to industrial standard.",
     qualification: "National Vocational Certificate (NVC)",
     pathways: ["Welder", "Metal Fabricator", "Workshop Technician", "Industrial Maintenance Technician"],
-    imageCaption: "Inside the OTC training workshop",
   },
   {
     slug: "joinery-cabinet-making",
@@ -77,7 +78,6 @@ export const trades: Trade[] = [
     blurb: "Turn timber into furniture and fitted interiors.",
     qualification: "National Vocational Certificate (NVC)",
     pathways: ["Cabinet Maker", "Furniture Manufacturer", "Carpenter", "Self-employed Artisan"],
-    imageCaption: "Woodworking machines in the joinery workshop",
   },
   {
     slug: "bricklaying-plastering",
@@ -87,7 +87,8 @@ export const trades: Trade[] = [
     blurb: "Build the walls and finishes Namibia is asking for.",
     qualification: "National Vocational Certificate (NVC)",
     pathways: ["Bricklayer", "Plasterer", "Building Contractor", "Site Supervisor"],
-    imageCaption: "Corner post strung with wire, AgriCampus",
+    // Needed: outdoor construction reads as fencing without it.
+    imageCaption: "Construction works at the AgriCampus",
   },
   {
     slug: "electrical-general",
@@ -97,7 +98,6 @@ export const trades: Trade[] = [
     blurb: "Wire, test and fault-find to code.",
     qualification: "National Vocational Certificate (NVC)",
     pathways: ["Electrician", "Wiring Installer", "Maintenance Electrician", "Electrical Technician"],
-    imageCaption: "Electrical practical assessment at OTC",
   },
   {
     slug: "auto-mechanics",
@@ -107,21 +107,20 @@ export const trades: Trade[] = [
     blurb: "Diagnose, service and repair what keeps Namibia moving.",
     qualification: "National Vocational Certificate (NVC)",
     pathways: ["Motor Mechanic", "Workshop Technician", "Service Advisor", "Self-employed Garage Owner"],
-    imageCaption: "Engine bay practical, Auto Mechanics",
   },
   {
     slug: "horticulture-crop-husbandry",
     name: "Horticulture & Crop Husbandry",
-    image: "/images/agri-build-05-t.webp",
-    alt: "Fence wire being strung along the OTC AgriCampus boundary",
+    image: "/images/agri-build-03-t.webp",
+    alt: "The open AgriCampus fields at Ongenga cleared and ready for crop production training",
     blurb: "Grow food and manage land as a business.",
     qualification: "National Vocational Certificate (NVC)",
     pathways: ["Crop Producer", "Nursery Grower", "Landscaper", "Agri-entrepreneur"],
-    imageCaption: "AgriCampus land development, OTC",
   },
 ];
 
 // Every caption below describes what is actually visible in the photo.
+// The hero cycles four different scenes, so a caption is needed there.
 export const heroSlides = [
   { src: "/images/classrooms-02.webp", alt: "Two OTC trainees in branded college jackets during a theory session", caption: "OTC trainees, theory session" },
   { src: "/images/graduation-03.webp", alt: "A graduate shaking hands as he receives his certificate at the OTC recognition ceremony", caption: "Certificate handover, recognition ceremony" },
@@ -129,47 +128,50 @@ export const heroSlides = [
   { src: "/images/workshop-03-t.webp", alt: "An electrical student taking multimeter readings at a wiring board", caption: "Electrical practical, OTC workshop" },
 ];
 
-export const gallery = [
-  { src: "/images/classrooms-04-c.webp", caption: "Instructor addressing a training session" },
-  { src: "/images/graduation-02-c.webp", caption: "Certificate moment, recognition ceremony" },
-  { src: "/images/expo-indoor-03-c.webp", caption: "OTC exhibition booth, indoor expo" },
-  { src: "/images/outreach-02-c.webp", caption: "Equipment demonstration, community outreach" },
-  { src: "/images/workshop-04-c.webp", caption: "Wiring practical, Electrical General" },
-  { src: "/images/auto-01-c.webp", caption: "Vehicle practical, Auto Mechanics" },
-  { src: "/images/signage-03-c.webp", caption: "Raising the OTC banner on campus" },
-  { src: "/images/agri-build-09-c.webp", caption: "Tensioning fence wire, AgriCampus" },
-  { src: "/images/agri-handover-03-c.webp", caption: "AgriCampus fencing handover" },
-  { src: "/images/team-01-c.webp", caption: "The OTC team at the campus entrance" },
-  { src: "/images/classrooms-06-c.webp", caption: "Lecture room, OTC campus" },
-  { src: "/images/expo-outdoor-02-c.webp", caption: "OTC gazebo stand, regional expo" },
+// Carousel items: alt is required; a caption chip only where the photo
+// genuinely needs explaining.
+export type CarouselSlide = { src: string; alt: string; caption?: string };
+
+// The AgriCampus story in order: bare ground, materials, fencing works, handover.
+export const agriCarousel: CarouselSlide[] = [
+  { src: "/images/agri-build-03-c.webp", alt: "Open sandy ground with scattered trees at the AgriCampus before any works started", caption: "The AgriCampus grounds before the works" },
+  { src: "/images/agri-build-01-c.webp", alt: "Fencing materials delivered and stacked on the AgriCampus site" },
+  { src: "/images/agri-build-04-c.webp", alt: "Workers unloading materials from a bakkie at the AgriCampus" },
+  { src: "/images/agri-build-02-t.webp", alt: "The first fence posts standing in the ground at Ongenga" },
+  { src: "/images/agri-build-05-c.webp", alt: "Fence wire being strung along the AgriCampus boundary" },
+  { src: "/images/agri-build-09-c.webp", alt: "A worker tensioning fence wire along the AgriCampus boundary" },
+  { src: "/images/agri-build-10-c.webp", alt: "A steel strainer post braced with wire in sandy ground" },
+  { src: "/images/agri-build-06-c.webp", alt: "A braced corner post with strung fence wire at the AgriCampus" },
+  { src: "/images/agri-handover-01-c.webp", alt: "Officials in hard hats receiving a roll of fencing at the handover" },
+  { src: "/images/agri-handover-03-c.webp", alt: "The AgriCampus fencing handover with officials and trainees on site" },
+  { src: "/images/agri-handover-05-c.webp", alt: "Fencing rolls handed over on site at the AgriCampus" },
+  { src: "/images/agri-build-08-c.webp", alt: "Chairs and a yellow table set out under the trees for the handover day" },
+  { src: "/images/agri-handover-06-c.webp", alt: "Group photo taken on the AgriCampus handover day" },
 ];
 
-export const agriCarousel = [
-  { src: "/images/agri-build-01-c.webp", caption: "Fencing materials delivered to the AgriCampus" },
-  { src: "/images/agri-build-02-t.webp", caption: "First posts in the ground, Ongenga" },
-  { src: "/images/agri-build-09-c.webp", caption: "Tensioning wire along the boundary" },
-  { src: "/images/agri-build-06-c.webp", caption: "Corner post braced and strung" },
-  { src: "/images/agri-handover-05-c.webp", caption: "Fencing rolls handed over on site" },
-  { src: "/images/agri-handover-06-c.webp", caption: "Group photo, AgriCampus handover day" },
+// Recognition ceremonies and community outreach, the two places OTC graduates
+// and staff are photographed. No captions: the photos speak for themselves.
+export const alumniCarousel: CarouselSlide[] = [
+  { src: "/images/graduation-01-c.webp", alt: "A graduate arriving to family greetings at the recognition ceremony" },
+  { src: "/images/graduation-02-c.webp", alt: "A graduate receiving the certificate folder on stage" },
+  { src: "/images/graduation-03-c.webp", alt: "The handshake as a graduate receives his certificate" },
+  { src: "/images/graduation-04-c.webp", alt: "Certificate handover at the recognition ceremony" },
+  { src: "/images/graduation-07-c.webp", alt: "A graduate holding his certificate folder with college officials beside him" },
+  { src: "/images/outreach-01-c.webp", alt: "The OTC outreach stand at a rural skills demonstration" },
+  { src: "/images/outreach-02-c.webp", alt: "OTC staff showing the tools of the trades to community members" },
+  { src: "/images/agri-handover-02-c.webp", alt: "OTC trainees in hi-vis vests taking a break under the trees on handover day" },
+  { src: "/images/outreach-03-c.webp", alt: "OTC staff with community members at an outreach event" },
 ];
 
-export const alumniCarousel = [
-  { src: "/images/graduation-01-c.webp", caption: "Graduate arriving to family greetings" },
-  { src: "/images/graduation-02-c.webp", caption: "Receiving the certificate folder on stage" },
-  { src: "/images/graduation-03-c.webp", caption: "The handshake that ends the trade" },
-  { src: "/images/graduation-04-c.webp", caption: "Certificate handover, recognition ceremony" },
-  { src: "/images/outreach-01-c.webp", caption: "OTC outreach stand, rural skills demo" },
-  { src: "/images/outreach-02-c.webp", caption: "Showing the tools of the trades" },
-  { src: "/images/outreach-03-c.webp", caption: "OTC staff with community members" },
-];
-
-export const campusCarousel = [
-  { src: "/images/team-03-b.webp", caption: "Under the college sign, OTC campus" },
-  { src: "/images/team-02-b.webp", caption: "The OTC team at the entrance" },
-  { src: "/images/signage-01-b.webp", caption: "Setting up the registration desk" },
-  { src: "/images/signage-02-b.webp", caption: "OTC banner at the sports field" },
-  { src: "/images/classrooms-01-b.webp", caption: "In class at OTC" },
-  { src: "/images/classrooms-05-b.webp", caption: "Training session in the lecture hall" },
+// Brand in use across campus. No captions: the branding is the subject.
+export const campusCarousel: CarouselSlide[] = [
+  { src: "/images/team-03-b.webp", alt: "The OTC team standing under the college sign at the campus entrance" },
+  { src: "/images/team-02-b.webp", alt: "The OTC team gathered at the campus entrance" },
+  { src: "/images/signage-01-b.webp", alt: "Setting up the registration desk under OTC signage" },
+  { src: "/images/signage-02-b.webp", alt: "The OTC banner pitched at the sports field" },
+  { src: "/images/classrooms-01-b.webp", alt: "A class in session at OTC" },
+  { src: "/images/classrooms-03-c.webp", alt: "Two students from behind wearing OTC-branded jackets in a classroom" },
+  { src: "/images/classrooms-05-b.webp", alt: "A training session in the lecture hall" },
 ];
 
 // Alumni: outcomes and ceremony evidence. No invented employment claims.

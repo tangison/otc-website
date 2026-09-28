@@ -12,7 +12,7 @@ function TradeDetails({ trade }: { trade: Trade }) {
         <Image src={trade.image} alt={trade.alt} fill sizes="(max-width: 640px) 90vw, 520px"
                   quality={60}
                 className="object-cover" />
-        <p className="caption-chip">{trade.imageCaption}</p>
+        {trade.imageCaption ? <p className="caption-chip">{trade.imageCaption}</p> : null}
       </div>
 
       <dl className="space-y-4 text-[0.95rem]">
@@ -88,7 +88,7 @@ export default function TradeTile({ trade, span = "", aspect = "aspect-[4/3]", p
                 quality={60}
                 className="object-cover"
               />
-              <p className="caption-chip">{trade.imageCaption}</p>
+              {trade.imageCaption ? <p className="caption-chip">{trade.imageCaption}</p> : null}
             </div>
             <div className="mt-4 flex items-start justify-between gap-3">
               <div>

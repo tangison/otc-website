@@ -50,7 +50,6 @@ export default function AboutPage() {
                   quality={60}
                   className="object-cover"
                 />
-                <p className="caption-chip">In class at OTC</p>
               </div>
             </Reveal>
           </div>
@@ -128,7 +127,7 @@ export default function AboutPage() {
         <SectionHead
           index="02"
           title="Why choose OTC"
-          lede="Six honest reasons, none of them adjectives."
+          lede="Six reasons trainees travel to Ongenga from across the region and across the border."
         />
         <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
           {[
@@ -171,7 +170,7 @@ export default function AboutPage() {
           <SectionHead
             index="03"
             title="Accreditation, recognition and governance"
-            lede="Stated plainly, with nothing dressed up. What is confirmed is confirmed; what is pending is marked pending."
+            lede="What is confirmed is listed here; what is still pending is marked as pending. Registration and accreditation certificates can be inspected at the campus."
           />
           <div className="mt-12 grid gap-10 lg:grid-cols-2">
             <Reveal>
@@ -258,7 +257,6 @@ export default function AboutPage() {
                 sizes="(max-width: 1024px) 100vw, 44vw"
                 className="object-cover"
               />
-              <p className="caption-chip">Staff and visitors at the campus</p>
             </div>
           </Reveal>
         </div>

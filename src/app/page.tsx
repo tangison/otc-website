@@ -131,7 +131,6 @@ export default function HomePage() {
                   quality={60}
                   className="object-cover"
                 />
-                <p className="caption-chip">Training session, OTC lecture hall</p>
               </div>
               <h3 className="display-3 mt-5 text-otc-navy">On the national TVET grid</h3>
               <p className="mt-2 text-[0.95rem] leading-relaxed text-otc-ink/75">
@@ -149,7 +148,6 @@ export default function HomePage() {
                   sizes="(max-width: 1024px) 100vw, 33vw"
                   className="object-cover"
                 />
-                <p className="caption-chip">OTC exhibition booth, indoor expo</p>
               </div>
               <h3 className="display-3 mt-5 text-otc-navy">Partnered with Bulawayo Polytechnic</h3>
               <p className="mt-2 text-[0.95rem] leading-relaxed text-otc-ink/75">
@@ -168,7 +166,6 @@ export default function HomePage() {
                   sizes="(max-width: 1024px) 100vw, 33vw"
                   className="object-cover"
                 />
-                <p className="caption-chip">Community skills demonstration</p>
               </div>
               <h3 className="display-3 mt-5 text-otc-navy">Serving the Ohangwena Region</h3>
               <p className="mt-2 text-[0.95rem] leading-relaxed text-otc-ink/75">
@@ -203,7 +200,6 @@ export default function HomePage() {
                   quality={60}
                   className="object-cover"
                 />
-                <p className="caption-chip">Certificate handover, recognition ceremony</p>
               </div>
             </Parallax>
           </Reveal>
@@ -245,7 +241,7 @@ export default function HomePage() {
         <SectionHead
           index="04"
           title="The campus is growing"
-          lede="Fencing and land works at the OTC AgriCampus, from construction through to handover. A college that is still building is a college that is still going places."
+          lede="The AgriCampus from bare ground to handover: materials arrive, the fence line goes up, and the community gathers to receive it. A college that is still building is a college that is still going places."
         />
         <Reveal className="mt-12">
           <LazyGallery items={agriCarousel} label="AgriCampus development photos" quality={55} />

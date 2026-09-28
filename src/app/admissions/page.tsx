@@ -110,27 +110,26 @@ export default function AdmissionsPage() {
                     className="h-full w-full object-cover"
                     loading="lazy"
                   />
-                  <p className="caption-chip">OTC trainees on campus</p>
+                </div>
+              </Reveal>
+              <Reveal className="mt-4">
+                <div className="grid grid-cols-3 gap-3">
+                  {[
+                    { src: "/images/classrooms-06-c.webp", alt: "A lecture room with desks and chairs at the OTC campus", label: "Lecture rooms" },
+                    { src: "/images/workshop-04-c.webp", alt: "A trainee on a wiring practical inside an OTC workshop", label: "Workshops" },
+                    { src: "/images/auto-01-c.webp", alt: "A vehicle raised in the OTC auto mechanics bay", label: "Vehicle bay" },
+                  ].map((g) => (
+                    <figure key={g.src}>
+                      <div className="img-frame relative aspect-[4/3]">
+                        <Image src={g.src} alt={g.alt} fill sizes="(max-width: 640px) 33vw, 220px" quality={55} className="object-cover" />
+                        <p className="caption-chip">{g.label}</p>
+                      </div>
+                    </figure>
+                  ))}
                 </div>
               </Reveal>
             </div>
-          <Reveal className="mt-10">
-            <div className="grid grid-cols-3 gap-3">
-              {[
-                { src: "/images/classrooms-06-c.webp", caption: "Lecture rooms" },
-                { src: "/images/workshop-04-c.webp", caption: "Workshops" },
-                { src: "/images/auto-01-c.webp", caption: "Vehicle bay" },
-              ].map((g) => (
-                <figure key={g.src}>
-                  <div className="img-frame relative aspect-[4/3]">
-                    <Image src={g.src} alt={g.caption} fill sizes="(max-width: 640px) 33vw, 220px" quality={55} className="object-cover" />
-                    <p className="caption-chip">{g.caption}</p>
-                  </div>
-                </figure>
-              ))}
-            </div>
-          </Reveal>
-            <Reveal delay={100}>
+            <Reveal delay={100} className="mt-10 lg:mt-0">
               <Accordion type="single" collapsible className="w-full">
                 {[
                   {
@@ -139,7 +138,7 @@ export default function AdmissionsPage() {
                   },
                   {
                     q: "How much are the fees?",
-                    a: "The college issues its fee schedule, in Namibian dollars (N$), for every intake: registration, tuition and examination components are confirmed by the administration. This site deliberately publishes no numbers it cannot stand behind.",
+                    a: "The college issues its fee schedule, in Namibian dollars (N$), for every intake: registration, tuition and examination components are confirmed by the administration. Phone admissions for the current rates for your programme.",
                   },
                   {
                     q: "Is accommodation available?",
@@ -155,7 +154,7 @@ export default function AdmissionsPage() {
                   },
                   {
                     q: "Is there an application form to download?",
-                    a: "The application form is issued by the college at first contact or at the campus. The current version is confirmed with admissions: we do not host a stale PDF here.",
+                    a: "The application form is issued by the college at first contact or at the campus, so you always receive the current version for your intake.",
                   },
                 ].map((f, i) => (
                   <AccordionItem key={i} value={`item-${i}`} className="border-border">

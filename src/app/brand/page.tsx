@@ -50,7 +50,7 @@ export default function BrandPage() {
         </Reveal>
         <Reveal className="mt-6 border-l-2 border-otc-gold bg-otc-tint/60 px-5 py-4">
           <p className="text-[0.95rem] leading-relaxed text-otc-ink/80">
-            Source resolution note, stated honestly: the crest comes from a low-resolution flyer
+            Source resolution note: the crest comes from a low-resolution flyer
             screenshot. It is used here at sizes where it reads cleanly. A redrawn vector from the
             original designer would unlock larger, sharper applications, and is on the college's
             asset wish list.

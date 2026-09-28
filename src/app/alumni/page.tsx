@@ -120,22 +120,19 @@ export default function AlumniPage() {
             lede="OTC people show up where the region meets the college: community demonstrations, expos and campus events."
           />
           <Reveal className="mt-12">
-                      <div className="mt-12 grid gap-4 sm:grid-cols-3">
-            {[
-              { src: "/images/expo-indoor-01-c.webp", caption: "Visitors welcomed at the OTC booth" },
-              { src: "/images/expo-indoor-03-c.webp", caption: "The OTC stand, indoor exhibition" },
-              { src: "/images/signage-02-c.webp", caption: "The OTC banner out in the field" },
-            ].map((g) => (
-              <Reveal key={g.src}>
-                <figure>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {[
+                { src: "/images/expo-indoor-01-c.webp", alt: "Visitors being welcomed at the OTC exhibition booth" },
+                { src: "/images/expo-indoor-03-c.webp", alt: "The OTC stand at an indoor exhibition" },
+                { src: "/images/signage-02-c.webp", alt: "The OTC banner pitched out in the field" },
+              ].map((g) => (
+                <Reveal key={g.src}>
                   <div className="img-frame relative aspect-[4/3]">
-                    <Image src={g.src} alt={g.caption} fill sizes="(max-width: 640px) 100vw, 33vw" quality={55} className="object-cover" />
-                    <p className="caption-chip">{g.caption}</p>
+                    <Image src={g.src} alt={g.alt} fill sizes="(max-width: 640px) 100vw, 33vw" quality={55} className="object-cover" />
                   </div>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
+                </Reveal>
+              ))}
+            </div>
           </Reveal>
           <Reveal className="mt-10 flex flex-wrap gap-3">
             <Link prefetch={false}
